@@ -1,0 +1,6 @@
+framework module Pods_JanusDemo {
+  umbrella header "Pods-JanusDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

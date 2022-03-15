@@ -1,0 +1,36 @@
+PODS:
+  - Ably (1.2.10):
+    - AblyDeltaCodec (= 1.3.2)
+    - msgpack (= 0.4.0)
+  - AblyDeltaCodec (1.3.2)
+  - GoogleWebRTC (1.1.31999)
+  - msgpack (0.4.0)
+  - SnapKit (5.0.1)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - Ably (= 1.2.10)
+  - GoogleWebRTC (= 1.1.31999)
+  - SnapKit (= 5.0.1)
+  - Starscream (= 4.0.4)
+
+SPEC REPOS:
+  trunk:
+    - Ably
+    - AblyDeltaCodec
+    - GoogleWebRTC
+    - msgpack
+    - SnapKit
+    - Starscream
+
+SPEC CHECKSUMS:
+  Ably: 80be962e2e87bac69727a26ba72b868c8e86288e
+  AblyDeltaCodec: 783d017270de70bbbc0a84e4235297b225d33636
+  GoogleWebRTC: b39a78c4f5cc6b0323415b9233db03a2faa7b0f0
+  msgpack: c85f6251873059738472ae136951cec5f30f3251
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: da1b6b197de9cbd9ff250234d199e3882a29ae53
+
+COCOAPODS: 1.11.2

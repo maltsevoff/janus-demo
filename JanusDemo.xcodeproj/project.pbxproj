@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CE18F1B0A606FA37B9DA190 /* Pods_JanusDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C27DE7495A40A122A85C30 /* Pods_JanusDemo.framework */; };
+		A738AA1B27D79124005B5B3E /* ServerPingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A738AA1A27D79124005B5B3E /* ServerPingResult.swift */; };
+		A7422DD227BE9A7900237F85 /* AblyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7422DD127BE9A7900237F85 /* AblyService.swift */; };
+		A7422DD527BEAB5900237F85 /* VideoRoomJoined.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7422DD427BEAB5900237F85 /* VideoRoomJoined.swift */; };
+		A7422DE527C3A64500237F85 /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7422DE427C3A64500237F85 /* WebSocketProvider.swift */; };
+		A7422DE727C3A68900237F85 /* StarscreamWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7422DE627C3A68900237F85 /* StarscreamWebSocket.swift */; };
+		A7422DE927C3A7B000237F85 /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7422DE827C3A7B000237F85 /* SignalingClient.swift */; };
+		A7422DEB27C3AA2000237F85 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7422DEA27C3AA2000237F85 /* Message.swift */; };
+		A7422DED27C3AA6200237F85 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7422DEC27C3AA6200237F85 /* SessionDescription.swift */; };
+		A7422DEF27C3AA7400237F85 /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7422DEE27C3AA7400237F85 /* IceCandidate.swift */; };
+		A7422DF127C549B200237F85 /* BalancingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7422DF027C549B200237F85 /* BalancingService.swift */; };
+		A7422DF427C54A5800237F85 /* JanusServersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7422DF327C54A5800237F85 /* JanusServersResponse.swift */; };
+		A79C4B2F27B3E29600A38586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C4B2E27B3E29600A38586 /* AppDelegate.swift */; };
+		A79C4B3127B3E29600A38586 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C4B3027B3E29600A38586 /* SceneDelegate.swift */; };
+		A79C4B3327B3E29600A38586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C4B3227B3E29600A38586 /* ViewController.swift */; };
+		A79C4B3627B3E29600A38586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79C4B3427B3E29600A38586 /* Main.storyboard */; };
+		A79C4B3827B3E29900A38586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79C4B3727B3E29900A38586 /* Assets.xcassets */; };
+		A79C4B3B27B3E29900A38586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79C4B3927B3E29900A38586 /* LaunchScreen.storyboard */; };
+		A79C4B4427B3E40A00A38586 /* JanusSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C4B4327B3E40A00A38586 /* JanusSession.swift */; };
+		A79C4B4727B402A900A38586 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C4B4627B402A900A38586 /* String+Extension.swift */; };
+		A79C4B5127B51A3100A38586 /* JanusTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C4B5027B51A3000A38586 /* JanusTransaction.swift */; };
+		A79C4B5327B5499200A38586 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C4B5227B5499200A38586 /* Dictionary+Extension.swift */; };
+		A79C4B5627B673EE00A38586 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C4B5527B673EE00A38586 /* WebRTCClient.swift */; };
+		A79C4B5927B676B200A38586 /* dLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C4B5827B676B200A38586 /* dLog.swift */; };
+		A79C4B5D27BD1D4800A38586 /* TrickleCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C4B5C27BD1D4800A38586 /* TrickleCandidate.swift */; };
+		A79C4B5F27BE546200A38586 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C4B5E27BE546200A38586 /* CameraManager.swift */; };
+		A7C7403B27DF56E200483158 /* ClientIdGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C7403A27DF56E200483158 /* ClientIdGenerator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D76DB67958063EA8E016A75 /* Pods-JanusDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JanusDemo.debug.xcconfig"; path = "Target Support Files/Pods-JanusDemo/Pods-JanusDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		42C27DE7495A40A122A85C30 /* Pods_JanusDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JanusDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		449B9B01479DD62C8D68194F /* Pods-JanusDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JanusDemo.release.xcconfig"; path = "Target Support Files/Pods-JanusDemo/Pods-JanusDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A738AA1A27D79124005B5B3E /* ServerPingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPingResult.swift; sourceTree = "<group>"; };
+		A7422DD127BE9A7900237F85 /* AblyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AblyService.swift; sourceTree = "<group>"; };
+		A7422DD427BEAB5900237F85 /* VideoRoomJoined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRoomJoined.swift; sourceTree = "<group>"; };
+		A7422DE427C3A64500237F85 /* WebSocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
+		A7422DE627C3A68900237F85 /* StarscreamWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarscreamWebSocket.swift; sourceTree = "<group>"; };
+		A7422DE827C3A7B000237F85 /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
+		A7422DEA27C3AA2000237F85 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A7422DEC27C3AA6200237F85 /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		A7422DEE27C3AA7400237F85 /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
+		A7422DF027C549B200237F85 /* BalancingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalancingService.swift; sourceTree = "<group>"; };
+		A7422DF327C54A5800237F85 /* JanusServersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanusServersResponse.swift; sourceTree = "<group>"; };
+		A79C4B2B27B3E29600A38586 /* JanusDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JanusDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79C4B2E27B3E29600A38586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A79C4B3027B3E29600A38586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A79C4B3227B3E29600A38586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A79C4B3527B3E29600A38586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A79C4B3727B3E29900A38586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A79C4B3A27B3E29900A38586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A79C4B3C27B3E29900A38586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79C4B4327B3E40A00A38586 /* JanusSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanusSession.swift; sourceTree = "<group>"; };
+		A79C4B4627B402A900A38586 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		A79C4B5027B51A3000A38586 /* JanusTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JanusTransaction.swift; sourceTree = "<group>"; };
+		A79C4B5227B5499200A38586 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		A79C4B5527B673EE00A38586 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		A79C4B5827B676B200A38586 /* dLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dLog.swift; sourceTree = "<group>"; };
+		A79C4B5C27BD1D4800A38586 /* TrickleCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickleCandidate.swift; sourceTree = "<group>"; };
+		A79C4B5E27BE546200A38586 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		A7C7403A27DF56E200483158 /* ClientIdGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientIdGenerator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A79C4B2827B3E29600A38586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE18F1B0A606FA37B9DA190 /* Pods_JanusDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06E3366B749C66705DFFC43B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D76DB67958063EA8E016A75 /* Pods-JanusDemo.debug.xcconfig */,
+				449B9B01479DD62C8D68194F /* Pods-JanusDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7422DD327BEAB1B00237F85 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A7422DD427BEAB5900237F85 /* VideoRoomJoined.swift */,
+				A7422DEC27C3AA6200237F85 /* SessionDescription.swift */,
+				A7422DEE27C3AA7400237F85 /* IceCandidate.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A7422DE327C3A62400237F85 /* Sockets */ = {
+			isa = PBXGroup;
+			children = (
+				A7422DE427C3A64500237F85 /* WebSocketProvider.swift */,
+				A7422DE627C3A68900237F85 /* StarscreamWebSocket.swift */,
+				A7422DE827C3A7B000237F85 /* SignalingClient.swift */,
+				A7422DEA27C3AA2000237F85 /* Message.swift */,
+			);
+			path = Sockets;
+			sourceTree = "<group>";
+		};
+		A7422DF227C549EE00237F85 /* Balancing */ = {
+			isa = PBXGroup;
+			children = (
+				A7422DF027C549B200237F85 /* BalancingService.swift */,
+				A7422DF327C54A5800237F85 /* JanusServersResponse.swift */,
+				A738AA1A27D79124005B5B3E /* ServerPingResult.swift */,
+			);
+			path = Balancing;
+			sourceTree = "<group>";
+		};
+		A79C4B2227B3E29600A38586 = {
+			isa = PBXGroup;
+			children = (
+				A79C4B2D27B3E29600A38586 /* JanusDemo */,
+				A79C4B2C27B3E29600A38586 /* Products */,
+				06E3366B749C66705DFFC43B /* Pods */,
+				CC9D15791B6FBC8DD50B6F80 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A79C4B2C27B3E29600A38586 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A79C4B2B27B3E29600A38586 /* JanusDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A79C4B2D27B3E29600A38586 /* JanusDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A7422DF227C549EE00237F85 /* Balancing */,
+				A7422DE327C3A62400237F85 /* Sockets */,
+				A79C4B5727B676AC00A38586 /* Utli */,
+				A79C4B4527B4029D00A38586 /* Extensions */,
+				A7422DD327BEAB1B00237F85 /* Entities */,
+				A79C4B2E27B3E29600A38586 /* AppDelegate.swift */,
+				A79C4B3027B3E29600A38586 /* SceneDelegate.swift */,
+				A79C4B3227B3E29600A38586 /* ViewController.swift */,
+				A79C4B5427B673E000A38586 /* WebRTC */,
+				A79C4B4227B3E3A800A38586 /* Janus */,
+				A79C4B3427B3E29600A38586 /* Main.storyboard */,
+				A79C4B3727B3E29900A38586 /* Assets.xcassets */,
+				A79C4B3927B3E29900A38586 /* LaunchScreen.storyboard */,
+				A79C4B3C27B3E29900A38586 /* Info.plist */,
+			);
+			path = JanusDemo;
+			sourceTree = "<group>";
+		};
+		A79C4B4227B3E3A800A38586 /* Janus */ = {
+			isa = PBXGroup;
+			children = (
+				A79C4B4327B3E40A00A38586 /* JanusSession.swift */,
+				A79C4B5027B51A3000A38586 /* JanusTransaction.swift */,
+				A79C4B5C27BD1D4800A38586 /* TrickleCandidate.swift */,
+			);
+			path = Janus;
+			sourceTree = "<group>";
+		};
+		A79C4B4527B4029D00A38586 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A79C4B4627B402A900A38586 /* String+Extension.swift */,
+				A79C4B5227B5499200A38586 /* Dictionary+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A79C4B5427B673E000A38586 /* WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				A79C4B5527B673EE00A38586 /* WebRTCClient.swift */,
+			);
+			path = WebRTC;
+			sourceTree = "<group>";
+		};
+		A79C4B5727B676AC00A38586 /* Utli */ = {
+			isa = PBXGroup;
+			children = (
+				A79C4B5827B676B200A38586 /* dLog.swift */,
+				A79C4B5E27BE546200A38586 /* CameraManager.swift */,
+				A7422DD127BE9A7900237F85 /* AblyService.swift */,
+				A7C7403A27DF56E200483158 /* ClientIdGenerator.swift */,
+			);
+			path = Utli;
+			sourceTree = "<group>";
+		};
+		CC9D15791B6FBC8DD50B6F80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42C27DE7495A40A122A85C30 /* Pods_JanusDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A79C4B2A27B3E29600A38586 /* JanusDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79C4B3F27B3E29900A38586 /* Build configuration list for PBXNativeTarget "JanusDemo" */;
+			buildPhases = (
+				86234E8727BC232129050201 /* [CP] Check Pods Manifest.lock */,
+				A79C4B2727B3E29600A38586 /* Sources */,
+				A79C4B2827B3E29600A38586 /* Frameworks */,
+				A79C4B2927B3E29600A38586 /* Resources */,
+				1E100047F8099ABEEE80F79F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JanusDemo;
+			productName = JanusDemo;
+			productReference = A79C4B2B27B3E29600A38586 /* JanusDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A79C4B2327B3E29600A38586 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A79C4B2A27B3E29600A38586 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A79C4B2627B3E29600A38586 /* Build configuration list for PBXProject "JanusDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A79C4B2227B3E29600A38586;
+			productRefGroup = A79C4B2C27B3E29600A38586 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A79C4B2A27B3E29600A38586 /* JanusDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A79C4B2927B3E29600A38586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79C4B3B27B3E29900A38586 /* LaunchScreen.storyboard in Resources */,
+				A79C4B3827B3E29900A38586 /* Assets.xcassets in Resources */,
+				A79C4B3627B3E29600A38586 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E100047F8099ABEEE80F79F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JanusDemo/Pods-JanusDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JanusDemo/Pods-JanusDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JanusDemo/Pods-JanusDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86234E8727BC232129050201 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JanusDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A79C4B2727B3E29600A38586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79C4B5127B51A3100A38586 /* JanusTransaction.swift in Sources */,
+				A7422DD227BE9A7900237F85 /* AblyService.swift in Sources */,
+				A79C4B5327B5499200A38586 /* Dictionary+Extension.swift in Sources */,
+				A7422DEB27C3AA2000237F85 /* Message.swift in Sources */,
+				A79C4B3327B3E29600A38586 /* ViewController.swift in Sources */,
+				A7C7403B27DF56E200483158 /* ClientIdGenerator.swift in Sources */,
+				A738AA1B27D79124005B5B3E /* ServerPingResult.swift in Sources */,
+				A79C4B5927B676B200A38586 /* dLog.swift in Sources */,
+				A7422DEF27C3AA7400237F85 /* IceCandidate.swift in Sources */,
+				A79C4B5627B673EE00A38586 /* WebRTCClient.swift in Sources */,
+				A79C4B2F27B3E29600A38586 /* AppDelegate.swift in Sources */,
+				A79C4B4427B3E40A00A38586 /* JanusSession.swift in Sources */,
+				A7422DF127C549B200237F85 /* BalancingService.swift in Sources */,
+				A7422DE727C3A68900237F85 /* StarscreamWebSocket.swift in Sources */,
+				A7422DD527BEAB5900237F85 /* VideoRoomJoined.swift in Sources */,
+				A79C4B4727B402A900A38586 /* String+Extension.swift in Sources */,
+				A7422DE927C3A7B000237F85 /* SignalingClient.swift in Sources */,
+				A7422DED27C3AA6200237F85 /* SessionDescription.swift in Sources */,
+				A79C4B5D27BD1D4800A38586 /* TrickleCandidate.swift in Sources */,
+				A7422DE527C3A64500237F85 /* WebSocketProvider.swift in Sources */,
+				A79C4B3127B3E29600A38586 /* SceneDelegate.swift in Sources */,
+				A79C4B5F27BE546200A38586 /* CameraManager.swift in Sources */,
+				A7422DF427C54A5800237F85 /* JanusServersResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A79C4B3427B3E29600A38586 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79C4B3527B3E29600A38586 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A79C4B3927B3E29900A38586 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79C4B3A27B3E29900A38586 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A79C4B3D27B3E29900A38586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A79C4B3E27B3E29900A38586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A79C4B4027B3E29900A38586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D76DB67958063EA8E016A75 /* Pods-JanusDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AK62F95LBK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JanusDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.JanusDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A79C4B4127B3E29900A38586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 449B9B01479DD62C8D68194F /* Pods-JanusDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AK62F95LBK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JanusDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.JanusDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A79C4B2627B3E29600A38586 /* Build configuration list for PBXProject "JanusDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79C4B3D27B3E29900A38586 /* Debug */,
+				A79C4B3E27B3E29900A38586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79C4B3F27B3E29900A38586 /* Build configuration list for PBXNativeTarget "JanusDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79C4B4027B3E29900A38586 /* Debug */,
+				A79C4B4127B3E29900A38586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A79C4B2327B3E29600A38586 /* Project object */;
+}
